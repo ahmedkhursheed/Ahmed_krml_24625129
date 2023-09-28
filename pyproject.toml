@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "my-krml-24625129"
+version = "0.1.0"
+description = "Data Exploration"
+authors = ["Ahmed Khursheed <ahmed.khursheed@student.uts.edu.au>"]
+readme = "README.md"
+packages = [{include = "my_krml_24625129"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "2.0.1"
+jupyterlab = "3.6.3"
+scikit-learn = "1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
