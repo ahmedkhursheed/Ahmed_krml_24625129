@@ -1,25 +1,26 @@
- # Solution
 import pandas as pd
 
-def pop_target(df, target_col):
-    """Extract target variable from dataframe
+def explore_dataframe(df):
+    """Explore a Pandas DataFrame
 
     Parameters
     ----------
     df : pd.DataFrame
-        Dataframe
-    target_col : str
-        Name of the target variable
+        The DataFrame to explore
 
     Returns
     -------
-    pd.DataFrame
-        Subsetted Pandas dataframe containing all features
-    pd.Series
-        Subsetted Pandas dataframe containing the target
+    None
     """
+    # Exploring first and last rows of df
+    print("First 5 rows:")
+    print(df.head())
+    print("\nLast 5 rows:")
+    print(df.tail())
 
-    df_copy = df.copy()
-    target = df_copy.pop(target_col)
+    # Shape of df
+    print("\nShape of DataFrame:", df.shape)
 
-    return df_copy, target
+    # Displaying column names
+    print("\nColumn Names:")
+    print(df.columns.tolist())
